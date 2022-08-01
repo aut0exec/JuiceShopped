@@ -21,7 +21,7 @@ Root privilege user - __root__:__juiceisworththesqueeze__
 
 __WARNING!__ Juice Shop is designed to be vulnerable. __DO NOT__ connect this VM to the Internet or sensitive networks.
 
-1. Download the OVA
+1. Download the OVA from the [releases page](https://github.com/aut0exec/JuiceShopped/releases)
 1. Launch virtualbox
 1. File -> Import Appliance
 1. Under the source section, select Local File System and then navigate to the location where the OVA file was downloaded
