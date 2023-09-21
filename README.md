@@ -6,12 +6,13 @@ Unofficial VirtualBox virtual machine instance of OWASP Juice Shop
 
 ## Features
 	- Devuan Daedalus instance
-	- OWASP Juice Shop version 14.1.1 Node 16
 	- Pre-installed and configured to auto start on boot
+		- OWASP Juice Shop version 15.0.1 Node 18
+		- VAmPI - Vulnerable API
 
 ## Relevant Information
 
-While there shouldn't be a need to log in, should one need to, the information is as follows:
+While there shouldn't be a need to log in to the console, should one need to, the information is as follows:
 
 Low privilege user  - __user__:__Password123__
 
@@ -27,11 +28,14 @@ __WARNING!__ Juice Shop is designed to be vulnerable. __DO NOT__ connect this VM
 1. Under the source section, select Local File System and then navigate to the location where the OVA file was downloaded
 1. The default settings should be sufficient on the right side of the import window
 1. Click Import in the bottom right to import the appliance
-1. Once the import has completed, got to the network settings and select the proper network configuration. __Host-only Adapter is STRONGLY encouraged.__
-1. Once the proper network has been chosen, start Juice Shop. The machine expects a DHCP server to be present and will automatically request an address.
-	- To deteremine address scope, check the network settings in VirtualBox's Host Network Manager or respective network configuration from above. Often nmap will make determining the address assigned to Juice Shop easier.
+1. Once the import finishes, start Juice Shop. The machine expects a DHCP server to be present and will automatically request an address.
+	- VirtualBox will automatically configure port forwards from the host to the guest for ports TCP/3000 and TCP/5000. Any scanning or interaction from the host with the virtual machine can be done via 127.0.0.1:3000 or 127.0.0.1:5000.
 
 ## Credits/Thanks
+[Erev0s VAmPI](https://github.com/erev0s/VAmPI)
+
++ Thanks for the vulnerable API to add to this project!
+
 [OWASP Foundation](https://owasp.org/www-project-juice-shop/)
 
 + Thanks for maintaining, releasing, and developing Juice Shop and a number of amazing other projects!
