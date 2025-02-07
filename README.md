@@ -7,7 +7,7 @@ Unofficial VirtualBox virtual machine instance of OWASP Juice Shop
 ## Features
 	- Devuan Daedalus instance
 	- Pre-installed and configured to auto start on boot
-		- OWASP Juice Shop version 15.0.1 Node 18
+		- OWASP Juice Shop version 17.1.1 Node 18
 		- VAmPI - Vulnerable API
 
 ## Relevant Information
